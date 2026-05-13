@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+      /* Base Options */
+      "target": "ES2022",                  // Modern JS features
+      "module": "NodeNext",                // Best for Node.js 20+
+      "moduleResolution": "NodeNext",
+      "rootDir": "./src",                  // Where your .ts files live
+      "outDir": "./dist",                  // Where compiled .js files go
+      
+      /* Strictness - Critical for Production */
+      "strict": true,                      // Enables all strict type-checking
+      "noImplicitAny": true,               // Prevents lazy coding
+      "strictNullChecks": true,            // Prevents "undefined" crashes
+      
+      /* Interop & Advanced */
+      "esModuleInterop": true,             // Fixes common import issues
+      "skipLibCheck": true,                // Faster builds
+      "forceConsistentCasingInFileNames": true,
+      "sourceMap": true,                   // Essential for debugging production errors
+      "removeComments": true,               // Keeps the production code small
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+    },
+    "include": ["src/**/*"],               // Only compile files in src
+    "exclude": ["node_modules", "**/*.test.ts"] // Ignore tests and libraries
+  }
